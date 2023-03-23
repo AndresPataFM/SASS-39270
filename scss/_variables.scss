@@ -1,0 +1,26 @@
+// variables
+$main-light: #FFF4E0;
+$main-normal: #FFBF9B;
+$main-dark: #B46060;
+$dark: #4D4D4D;
+
+// booleanos
+$verdadero: true;
+$falso: false;
+
+
+// maps
+
+$color-botones: (
+    primary: blue,
+    success: green,
+    danger: red,
+    warning: yellow,
+    naranja: orange
+);
+
+// mixins
+@mixin size($width, $height){
+    width: $width;
+    height: $height;
+}

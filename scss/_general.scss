@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: $main-normal;
+    color: $dark;
+    padding: 100px 2.5% 0 2.5%;
+}
+
+button{
+    background-color: $main-light;
+    padding: 4px;
+    border-radius: 5px;
+    &:hover{
+        background-color: $main-dark;
+    }
+
+}
+
+
+// #{} le indica a scss que adentro de los {} va lógica de scss
+
+// Bucle
+// @for $parametro from valor-inicial to valor-final {
+//     #{$parametro}{
+//         propiedad: valor * $i //y variantes
+//     }
+// }
+
+@for $tamanio from 1 to 4{
+    .img--#{$tamanio}{
+        height: 20px * $tamanio;
+        width: 40px * $tamanio;
+        margin: 10px;
+        background-color: red;
+    }
+}
+
+
+// @each
+
+// @each $parametro in valor1, valor2.... valorX{
+//     xxx#{$parametro}{
+//         css
+//     }
+// }
+
+// @each $parametro in red, yellow, blue{
+//     .contenedor--#{$parametro}{
+//         background-color: #{$parametro};
+//     }
+// }
+
+// Maps
+
+// Se utiliza un mapa previamente declarado con clave valor
+// @each $parametro1, $parametro2 in $mapa{
+
+// }
+@each $nombre, $color in $color-botones{
+    .btn--#{$nombre}{
+        color: white;
+        background-color: $color;
+    }
+}
+
+//  map-get()
+h2{
+    color: map-get($color-botones, primary );
+}
+
+
+
+// mixin
+div{
+    @include size(75px, 75px);
+    background-color: blueviolet;
+    margin: 20px;
+}

@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #FFBF9B;
+  color: #4D4D4D;
+  padding: 100px 2.5% 0 2.5%;
+}
+
+button {
+  background-color: #FFF4E0;
+  padding: 4px;
+  border-radius: 5px;
+}
+button:hover {
+  background-color: #B46060;
+}
+
+.img--1 {
+  height: 20px;
+  width: 40px;
+  margin: 10px;
+  background-color: red;
+}
+
+.img--2 {
+  height: 40px;
+  width: 80px;
+  margin: 10px;
+  background-color: red;
+}
+
+.img--3 {
+  height: 60px;
+  width: 120px;
+  margin: 10px;
+  background-color: red;
+}
+
+.btn--primary {
+  color: white;
+  background-color: blue;
+}
+
+.btn--success {
+  color: white;
+  background-color: green;
+}
+
+.btn--danger {
+  color: white;
+  background-color: red;
+}
+
+.btn--warning {
+  color: white;
+  background-color: yellow;
+}
+
+.btn--naranja {
+  color: white;
+  background-color: orange;
+}
+
+h2 {
+  color: blue;
+}
+
+div {
+  width: 75px;
+  height: 75px;
+  background-color: blueviolet;
+  margin: 20px;
+}
+
+header {
+  height: 100px;
+  width: 100%;
+  background-color: #FFF4E0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 5px;
+}
+header h2 {
+  color: red;
+}
+header .navbar ul {
+  list-style: none;
+}
+
+.navbar__link, .navbar__link--active {
+  font-size: 20px;
+  color: #4D4D4D;
+}
+
+.navbar__link--active {
+  color: black;
+  font-weight: bold;
+}
+
+footer {
+  height: 100px;
+  width: 100%;
+  background-color: #B46060;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}/*# sourceMappingURL=style.css.map */
